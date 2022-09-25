@@ -1,0 +1,25 @@
+.expanded {
+  padding-left: 20%;
+  width: 100%;
+  min-height: 100vh;
+  .expanded_image {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+    }
+  }
+  .expanded_content {
+    padding-right: 24px;
+    h2 {
+      font-weight: bold;
+      font-size: 34px;
+      font-family: 'Berkshire Swash', cursive;
+    }
+    p {
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+}

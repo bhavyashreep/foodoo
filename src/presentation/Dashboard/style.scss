@@ -1,0 +1,212 @@
+#main {
+  padding: 0px 50px;
+  padding-left: 20%;
+  background-color: #fcf4f0;
+  .wrap_image {
+    position: fixed;
+    right: 0;
+    width: 180px;
+    top: 30%;
+    z-index: 1000;
+  }
+  .primary-btn {
+    background-color: #dd432a;
+    border: none;
+    border-radius: 12px;
+    height: 50px;
+    // width: 140px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 20px;
+    margin-left: 14px;
+  }
+  .page-header {
+    background-color: #fcf4f0 !important;
+  }
+  .search-bar {
+    border: none;
+    border-bottom: 1px solid #d6d1cf;
+    color: #d6d1cf;
+    width: 400px;
+    background-color: #fcf4f0 !important;
+
+    input {
+      background-color: #fcf4f0 !important;
+
+      font-size: 18px;
+    }
+  }
+  .titlebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: 100px;
+      width: 100px;
+      display: inline-block;
+      margin-right: 14px;
+    }
+    h2 {
+      font-family: 'Berkshire Swash', cursive;
+      font-weight: 700;
+      font-size: 52px;
+      margin-bottom: 0px;
+    }
+    .right {
+      display: flex;
+      h2 {
+        font-size: 34px;
+        font-weight: 900;
+        margin-bottom: 0;
+      }
+      .tutorials {
+        border-right: 1px solid #d6d1cf;
+        padding-right: 14px;
+        margin-right: 14px;
+      }
+    }
+    .right:first-child {
+      border-right: 1px solid #776c68;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      p {
+        color: #a69f9b;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  .content {
+    padding-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    .card:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(221, 67, 42, 0.22);
+      button {
+        background-color: #dd432a;
+        color: white;
+        border-top: 0.5px solid #dd432a;
+      }
+    }
+    .card {
+      // padding: 20px;
+      width: 220px;
+      //   width: 20%;
+      position: relative;
+      padding-top: 50px;
+      background-color: white;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 24px;
+      margin-bottom: 74px;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease;
+      transform: translateY(0px);
+
+      .details {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px 15px;
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+        img {
+          height: 20px;
+          width: 20px;
+          display: block;
+        }
+        span {
+          font-weight: bold;
+          font-size: 16px;
+        }
+        h2 {
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+
+      h4 {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+      .rating {
+        color: #dd432a;
+        margin-bottom: 14px;
+      }
+      .img-box {
+        position: absolute;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        top: -35px;
+        // left: 25%;
+        text-align: center;
+        overflow: hidden;
+      }
+      img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      button {
+        border: none;
+        width: 100%;
+        border-top: 0.5px solid #d6d1cf;
+        height: 50px;
+        border-radius: 0 0 10px 10px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+    .pro-card {
+      background: #7dbfa3;
+      padding: 14px;
+      justify-content: space-between;
+      .pro-tag {
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        width: 100%;
+        span {
+          border: 1px solid black;
+          padding: 2px 8px;
+          color: white;
+          background: black;
+          border-radius: 8px;
+        }
+      }
+      .pro-content {
+        margin-top: -35px;
+        h2 {
+          color: white;
+          font-family: 'Berkshire Swash', cursive;
+          font-size: 24px;
+          font-weight: 700;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}
